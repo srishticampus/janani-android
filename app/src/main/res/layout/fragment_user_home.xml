@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserHomeFragment">
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#E5E5CB">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cv_search_bar_section"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@color/search_bar_color"
+                app:cardCornerRadius="50dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/search_bar_color">
+
+                    <EditText
+                        android:id="@+id/et_search_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:hint="Search"
+                        android:inputType="text|textNoSuggestions"
+                        android:paddingLeft="20dp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        android:theme="@style/ThemeOverlay.Material3.TextInputEditText" />
+
+                    <ImageView
+                        android:id="@+id/iv_search_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/baseline_search_24" />
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <!--            <androidx.recyclerview.widget.RecyclerView-->
+            <!--                android:id="@+id/rv_categories_view"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_below="@id/cv_search_bar_section"-->
+            <!--                android:layout_marginLeft="0dp"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:layout_marginRight="0dp"-->
+            <!--                android:padding="10dp" />-->
+            <HorizontalScrollView
+                android:id="@+id/sv_categories_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cv_search_bar_section">
+
+                <LinearLayout
+                    android:id="@+id/ll_categories_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_below="@id/cv_search_bar_section"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="3dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        app:cardCornerRadius="25dp">
+
+                        <TextView
+                            android:id="@+id/tv_all_category"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:padding="5dp"
+                            android:text="All Categories"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        app:cardCornerRadius="25dp">
+
+                        <TextView
+                            android:id="@+id/tv_category_sanitary_pad"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:text="Sanitary Pads"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        app:cardCornerRadius="25dp">
+
+                        <TextView
+                            android:id="@+id/tv_category_period_underwear"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:text="Period Underwear"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        app:cardCornerRadius="25dp">
+
+                        <TextView
+                            android:id="@+id/tv_category_tampons"
+                            android:layout_width="80dp"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:text="Tampons"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="3dp"
+                        app:cardCornerRadius="25dp">
+
+                        <TextView
+                            android:id="@+id/tv_category_menstrual_cups"
+                            android:layout_width="100dp"
+                            android:layout_height="50dp"
+                            android:gravity="center"
+                            android:padding="3dp"
+                            android:text="Menstrual Cups"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/sv_categories_layout"
+                android:background="@drawable/coronavirus_delivery_preventions_cuate" />
+
+            <TextView
+                android:id="@+id/tv_error_message"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/view"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:gravity="center"
+                android:text="Product Unavailable!"
+                android:textColor="@color/black"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:visibility="invisible" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_product_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/view"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp" />
+
+            <FrameLayout
+                android:id="@+id/frame_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/view"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:visibility="invisible" />
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bt_user_kit_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="50dp"
+        android:src="@drawable/care" />
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/sl_user_home_shimmer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="invisible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/user_home_shimmer_layout" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</RelativeLayout>

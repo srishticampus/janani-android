@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5CB"
+    tools:context=".OrderDetails">
+
+    <TextView
+        android:id="@+id/tv_order_summery_heading"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Order Summery"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_order_date_title"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_order_summery_heading"
+        android:layout_alignStart="@+id/tv_order_summery_heading"
+        android:drawableLeft="@drawable/baseline_date_range_24"
+        android:drawablePadding="7dp"
+        android:gravity="center_vertical"
+        android:text="Order Date : "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_order_date"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_order_summery_heading"
+        android:layout_toRightOf="@+id/tv_order_date_title"
+        android:gravity="center_vertical"
+        android:text="29-Aug-2023"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_order_total_amount_title"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_order_date_title"
+        android:layout_alignStart="@+id/tv_order_summery_heading"
+        android:drawableLeft="@drawable/baseline_currency_rupee_24"
+        android:drawablePadding="7dp"
+        android:gravity="center_vertical"
+        android:text="Total Amount : "
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_order_total_amount"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_order_date"
+        android:layout_toRightOf="@+id/tv_order_total_amount_title"
+        android:gravity="center_vertical"
+        android:text="2900.00"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_order_delivery_address_title"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_order_total_amount_title"
+        android:layout_alignStart="@+id/tv_order_summery_heading"
+        android:gravity="center_vertical"
+        android:text="Delivery Address"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_order_delivery_address"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/tv_order_delivery_address_title"
+        android:layout_alignStart="@+id/tv_order_summery_heading"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center_vertical"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

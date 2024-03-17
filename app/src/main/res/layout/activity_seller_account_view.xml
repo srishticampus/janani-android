@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingBottom="30dp"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_one">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/login_iv_one"
+                    android:layout_width="250dp"
+                    android:layout_height="250dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="20dp">
+
+                    <ImageView
+                        android:layout_width="250dp"
+                        android:layout_height="250dp"
+                        android:src="@drawable/login_page_image" />
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/tv_company_name"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/login_iv_one"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:drawableLeft="@drawable/ic_address"
+                    android:drawablePadding="10dp"
+                    android:text="Company Name"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_phone_number"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/tv_company_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/baseline_local_phone_24"
+                    android:drawablePadding="10dp"
+                    android:text="Phone Number"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_email_id"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/tv_phone_number"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_mail_outline_24"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Your Email"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+
+                <TextView
+                    android:id="@+id/tv_company_address"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"
+                    android:layout_below="@id/tv_email_id"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/baseline_location_black"
+                    android:drawablePadding="10dp"
+                    android:gravity="center_vertical"
+                    android:text="Your Address"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/tv_license_number"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/tv_company_address"
+                    android:layout_alignStart="@id/tv_company_address"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/number"
+                    android:drawablePadding="10dp"
+                    android:text="Your License Number"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_view_license"-->
+<!--                    android:layout_width="80dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_toRightOf="@id/tv_license_number"-->
+<!--                    android:layout_below="@id/tv_company_address"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:drawableLeft="@drawable/baseline_remove_red_eye_24"-->
+<!--                    android:drawablePadding="10dp"-->
+<!--                    android:text="Your License Number"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:paddingLeft="20dp"-->
+<!--                    android:paddingRight="10dp"-->
+<!--                    android:textColor="@color/text_color"-->
+<!--                    android:textSize="20sp" />-->
+
+                <TextView
+                    android:id="@+id/tv_user_kit"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:minHeight="50dp"
+                    android:layout_below="@id/tv_license_number"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:text="UserKit feature is available"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:textStyle="bold|italic"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <!--                <View-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="2dp"-->
+                <!--                    android:layout_below="@id/tv_confirm_password"-->
+                <!--                    android:layout_alignBaseline="@id/bt_save_button"-->
+                <!--                    android:background="@color/heading_color" />-->
+
+                <TextView
+                    android:id="@+id/bt_seller_edit_account_button"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/tv_user_kit"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/button_view_background"
+                    android:elevation="10dp"
+                    android:text="Edit Account"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+</ScrollView>

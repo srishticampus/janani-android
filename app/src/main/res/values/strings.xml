@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Janani</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+
+    <string name="prompt_phone_number">Enter Your Phone Number</string>
+    <string name="prompt_password">Enter The Password</string>
+    <string name="account_switch_query">Login as a seller :</string>
+    <string name="button_login">LOGIN</string>
+    <string name="registration">Registration</string>
+    <string name="button_register">Register</string>
+    <string name="text_register">Register as</string>
+
+
+    <string name="button_save">Save</string>
+    <string name="prompt_age">Enter your age</string>
+    <string name="prompt_register">Do not have an account ?</string>
+    <string name="prompt_user_name">Enter your name </string>
+    <string name="prompt_email">Enter your Email ID</string>
+    <string name="prompt_confirm_password">Re-enter your password</string>
+
+
+    <string name="IFSC_code">Enter IFSC code</string>
+    <string name="bank_details_heading">Bank Details</string>
+    <string name="prompt_account_number">Enter your account number</string>
+    <string name="prompt_bank_address">Enter bank branch address </string>
+    <string name="prompt_company_name">Enter your company name</string>
+    <string name="prompt_company_address">Enter company address</string>
+    <string name="prompt_license_number">Enter license number</string>
+    <string name="query_user_kit">User kit feature available?</string>
+    <string name="description_user_kit">By checking this option , you agree to deliver some selected items within 1 hour from the time of ordering.</string>
+    <string name="button_seller_reg_switch">SELLER</string>
+    <string name="button_user_reg_switch">USER</string>
+
+
+    <!-- to toggle the open close button of the navigation drawer -->
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="drawer_title">Navigation Drawer</string>
+    <string name="drawer_open">Open Navigation Drawer</string>
+    <string name="drawer_close">Close Navigation Drawer</string>
+    <string name="rs_sign">₹</string>
+    <string name="search">Search</string>
+    <string name="welcome_wishlist">Welcome</string>
+
+</resources>

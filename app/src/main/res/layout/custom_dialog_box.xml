@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_box_background"
+    android:backgroundTint="#E5E5CB"
+    android:gravity="center"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_dialog_box_image"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_horizontal"
+        android:text="Add item to cart"
+        android:textSize="35sp"
+        android:textStyle="bold" />
+
+
+    <EditText
+        android:id="@+id/et_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/tv_dialog_box_image"
+        android:background="@drawable/view_background"
+        android:hint="Enter quantity"
+        android:paddingLeft="25dp"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bt_add_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_quantity"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="Add To Cart" />
+
+</RelativeLayout>

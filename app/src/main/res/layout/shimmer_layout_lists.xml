@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5CB"
+    tools:context=".UserWishlistFragment">
+
+
+    <TextView
+        android:id="@+id/tv_welcome_title"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/view_background"
+        android:backgroundTint="@color/shimmer_color"
+        android:backgroundTintMode="add" />
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/tv_welcome_title"
+        android:layout_marginTop="10dp"
+        android:background="@color/shimmer_color" />
+
+    <TextView
+        android:id="@+id/tv_wishlist_title"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/view"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/view_background"
+        android:backgroundTint="@color/shimmer_color"
+        android:backgroundTintMode="add" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_wishlist_title"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="@color/shimmer_color"
+            app:cardCornerRadius="10dp" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginBottom="10dp"
+            app:cardBackgroundColor="@color/shimmer_color"
+            app:cardCornerRadius="10dp" />
+    </LinearLayout>
+</RelativeLayout>

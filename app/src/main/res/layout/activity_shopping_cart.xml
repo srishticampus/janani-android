@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5CB"
+    tools:context=".UserWishlistFragment">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_welcome_title"-->
+            <!--                android:layout_width="170dp"-->
+            <!--                android:layout_height="50dp"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:layout_marginTop="40dp"-->
+            <!--                android:text="@string/welcome_wishlist"-->
+            <!--                android:textColor="@color/background_color"-->
+            <!--                android:textSize="40sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_user_name"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_alignTop="@id/tv_wishlist_title"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_toRightOf="@id/tv_wishlist_title"-->
+            <!--                android:textColor="@color/background_color"-->
+            <!--                android:textSize="40sp"-->
+            <!--                android:textStyle="bold" />-->
+
+            <TextView
+                android:id="@+id/tv_wishlist_title"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp"
+                android:text="Your Cart"
+                android:textColor="@color/background_color"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_below="@id/tv_wishlist_title"
+                android:background="@drawable/black_friday_cuate" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_shopping_cart_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/view"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="15dp" />
+
+            <Button
+                android:id="@+id/bt_place_order_button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rv_shopping_cart_items"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/button_view_background"
+                android:text="Place Order"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmer_layout_shopping_cart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/shimmer_layout_lists" />
+        </LinearLayout>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+</RelativeLayout>

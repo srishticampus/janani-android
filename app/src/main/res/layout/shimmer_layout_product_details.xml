@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5CB"
+    tools:context=".ProductDetailsActivity">
+
+    <View
+        android:id="@+id/cv_product_image"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@color/shimmer_color" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/cv_product_image"
+        android:layout_marginTop="-35dp"
+        android:background="@drawable/product_details_background"
+        android:backgroundTint="@color/search_bar_color">
+
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/view_background"
+            android:backgroundTint="@color/shimmer_color"
+            android:backgroundTintMode="add" />
+
+        <TextView
+            android:id="@+id/tv_mrp_rs_symbol"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_product_name"
+            android:layout_alignStart="@id/tv_product_name"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/view_background"
+            android:backgroundTint="@color/shimmer_color"
+            android:backgroundTintMode="add" />
+
+
+        <TextView
+            android:id="@+id/tv_description_title"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_mrp_rs_symbol"
+            android:layout_alignStart="@id/tv_product_name"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/view_background"
+            android:backgroundTint="@color/shimmer_color"
+            android:backgroundTintMode="add" />
+
+        <TextView
+            android:id="@+id/tv_description_body"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/tv_description_title"
+            android:layout_alignStart="@id/tv_product_name"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/main_layout_background"
+            android:backgroundTint="@color/shimmer_color"
+            android:backgroundTintMode="add" />
+
+        <View
+            android:id="@+id/np_quantity_picker"
+            android:layout_width="50dp"
+            android:layout_height="100dp"
+            android:layout_below="@id/tv_product_name"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/view_background"
+            android:backgroundTint="@color/shimmer_color"
+            android:backgroundTintMode="add" />
+
+        <View
+            android:id="@+id/bt_add_to_cart"
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:background="@drawable/button_view_background"
+            android:backgroundTint="@color/shimmer_color" />
+    </RelativeLayout>
+</RelativeLayout>

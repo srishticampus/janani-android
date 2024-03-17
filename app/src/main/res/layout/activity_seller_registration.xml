@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?><!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@color/background_color"-->
+<!--    tools:context=".SellerRegistration">-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_marginTop="100dp"-->
+<!--        android:gravity="center">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_registration_heading"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            android:layout_marginTop="70dp"-->
+<!--            android:text="@string/registration"-->
+<!--            android:textColor="@color/heading_color"-->
+<!--            android:textSize="30sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:layout_alignBottom="@id/tv_registration_heading"-->
+<!--            android:layout_marginLeft="10dp"-->
+<!--            android:layout_marginTop="5dp"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:layout_toRightOf="@id/tv_registration_heading"-->
+<!--            android:background="@color/heading_color" />-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cv_display_image"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/tv_registration_heading"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="30dp"-->
+<!--            app:cardBackgroundColor="@color/card_background_color"-->
+<!--            app:cardCornerRadius="100dp">-->
+
+<!--            <ImageView-->
+<!--                android:id="@+id/iv_display_image"-->
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="150dp"-->
+<!--                android:src="@drawable/ic_baseline_account_circle_24" />-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <androidx.cardview.widget.CardView-->
+<!--            android:id="@+id/cv_dp_edit_button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/cv_display_image"-->
+<!--            android:layout_marginLeft="-40dp"-->
+<!--            android:layout_marginTop="-60dp"-->
+<!--            android:layout_toRightOf="@id/cv_display_image"-->
+<!--            app:cardBackgroundColor="@color/card_background_color"-->
+<!--            app:cardCornerRadius="100dp"-->
+<!--            app:cardElevation="10dp">-->
+
+<!--            <ImageView-->
+<!--                android:layout_width="50dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:padding="10dp"-->
+<!--                android:src="@drawable/ic_baseline_edit_24" />-->
+<!--        </androidx.cardview.widget.CardView>-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/et_company_name"-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_below="@id/cv_dp_edit_button"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="50dp"-->
+<!--            android:background="@drawable/view_background"-->
+<!--            android:drawableLeft="@drawable/ic_baseline_account_circle_24"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:hint="@string/prompt_company_name"-->
+<!--            android:inputType="text"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:paddingRight="10dp"-->
+<!--            android:textColor="@color/text_color"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/et_phone_number"-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_below="@id/et_company_name"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@drawable/view_background"-->
+<!--            android:drawableLeft="@drawable/baseline_local_phone_24"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:hint="@string/prompt_phone_number"-->
+<!--            android:inputType="number"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:paddingRight="10dp"-->
+<!--            android:textColor="@color/text_color"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/et_email_id"-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_below="@id/et_phone_number"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@drawable/view_background"-->
+<!--            android:drawableLeft="@drawable/ic_baseline_mail_outline_24"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:hint="@string/prompt_email"-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:paddingRight="10dp"-->
+<!--            android:textColor="@color/text_color"-->
+<!--            android:textSize="20sp" />-->
+
+
+<!--        <EditText-->
+<!--            android:id="@+id/et_password"-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_below="@id/et_email_id"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@drawable/view_background"-->
+<!--            android:drawableLeft="@drawable/baseline_lock_24"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:hint="@string/prompt_password"-->
+<!--            android:inputType="text"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:paddingRight="10dp"-->
+<!--            android:textColor="@color/text_color"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/et_confirm_password"-->
+<!--            android:layout_width="350dp"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:layout_below="@id/et_password"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:background="@drawable/view_background"-->
+<!--            android:drawableLeft="@drawable/baseline_lock_24"-->
+<!--            android:drawablePadding="10dp"-->
+<!--            android:hint="@string/prompt_confirm_password"-->
+<!--            android:inputType="text"-->
+<!--            android:paddingLeft="20dp"-->
+<!--            android:paddingRight="10dp"-->
+<!--            android:textColor="@color/text_color"-->
+<!--            android:textSize="20sp" />-->
+
+<!--        <View-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="2dp"-->
+<!--            android:layout_below="@id/et_confirm_password"-->
+<!--            android:layout_alignBaseline="@id/bt_save_button"-->
+<!--            android:background="@color/heading_color" />-->
+
+<!--        <Button-->
+<!--            android:id="@+id/bt_save_button"-->
+<!--            android:layout_width="150dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/et_confirm_password"-->
+<!--            android:layout_centerHorizontal="true"-->
+<!--            android:layout_marginTop="40dp"-->
+<!--            android:background="@drawable/button_view_background"-->
+<!--            android:elevation="10dp"-->
+<!--            android:text="@string/button_save"-->
+<!--            android:layout_marginBottom="150dp"-->
+<!--            android:textColor="@color/button_text_color"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold" />-->
+<!--    </RelativeLayout>-->
+
+
+<!--</ScrollView>-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:paddingBottom="30dp"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:elevation="10dp"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white_one">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_display_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    app:cardBackgroundColor="@color/card_background_color"
+                    app:cardCornerRadius="100dp">
+
+                    <ImageView
+                        android:id="@+id/iv_display_image"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:src="@drawable/ic_baseline_account_circle_24" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_dp_edit_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/cv_display_image"
+                    android:layout_marginLeft="-40dp"
+                    android:layout_marginTop="-60dp"
+                    android:layout_toRightOf="@id/cv_display_image"
+                    app:cardBackgroundColor="@color/card_background_color"
+                    app:cardCornerRadius="100dp"
+                    app:cardElevation="10dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_baseline_edit_24" />
+                </androidx.cardview.widget.CardView>
+
+
+                <EditText
+                    android:id="@+id/et_company_name"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/cv_display_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="50dp"
+                    android:drawableLeft="@drawable/ic_baseline_account_circle_24"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/prompt_company_name"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_phone_number"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/et_company_name"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/baseline_local_phone_24"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/prompt_phone_number"
+                    android:inputType="number"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_email_id"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/et_phone_number"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/ic_baseline_mail_outline_24"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/prompt_email"
+                    android:inputType="textEmailAddress"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+
+                <EditText
+                    android:id="@+id/et_password"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/et_email_id"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/baseline_lock_24"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/prompt_password"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/et_confirm_password"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/et_password"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:drawableLeft="@drawable/baseline_lock_24"
+                    android:drawablePadding="10dp"
+                    android:hint="@string/prompt_confirm_password"
+                    android:inputType="text"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="10dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <!--                <View-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="2dp"-->
+                <!--                    android:layout_below="@id/et_confirm_password"-->
+                <!--                    android:layout_alignBaseline="@id/bt_save_button"-->
+                <!--                    android:background="@color/heading_color" />-->
+
+                <TextView
+                    android:id="@+id/bt_save_button"
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/et_confirm_password"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginBottom="50dp"
+                    android:background="@drawable/button_view_background"
+                    android:elevation="10dp"
+                    android:gravity="center"
+                    android:text="@string/button_save"
+                    android:textColor="@color/white"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </RelativeLayout>
+
+</ScrollView>

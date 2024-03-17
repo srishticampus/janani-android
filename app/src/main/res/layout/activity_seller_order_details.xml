@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SellerOrderDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/order_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"
+            android:text="Order Information"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="24dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID :"
+                android:textColor="@color/oragne_txt" />
+
+            <TextView
+                android:id="@+id/order_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                tools:text="23333" />
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/delivery_tv"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/order_tv"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@color/grey"
+            android:text="Delivery to"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/seller_order_address_tv"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@id/delivery_tv"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="24dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/view_one"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/seller_order_address_tv"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@color/grey"
+            android:textSize="18sp" />
+
+        <RelativeLayout
+            android:id="@+id/rl_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/view_one">
+
+            <ImageView
+                android:id="@+id/seller_history_product_img"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/shopping" />
+
+            <TextView
+                android:id="@+id/seller_order_history_product_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/seller_history_product_img"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/seller_history_product_img"
+                android:ellipsize="end"
+                android:text="StayFree"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/seller_order_history_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seller_order_history_product_name"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/seller_history_product_img"
+                android:ellipsize="end"
+                tools:text="80"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seller_order_history_product_name"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/seller_order_history_product_price"
+                android:ellipsize="end"
+                android:text="@string/rs_sign"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/qty_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_below="@id/rl_one"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"/>
+        <TextView
+            android:id="@+id/seller_order_history_product_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="10"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:layout_below="@id/rl_one"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/sub_total_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SubTotal"
+            android:ellipsize="end"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@id/seller_order_history_product_quantity"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="24dp"/>
+        <TextView
+            android:id="@+id/tv_rs_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/rs_sign"
+            android:ellipsize="end"
+            android:textColor="@color/oragne_txt"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@id/seller_order_history_product_quantity"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="24dp"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/seller_order_history_product_sub_total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="10000"
+            android:ellipsize="end"
+            android:textColor="@color/oragne_txt"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_below="@id/seller_order_history_product_quantity"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="24dp"
+            android:layout_toLeftOf="@id/tv_rs_sign" />
+        <View
+            android:id="@+id/view_two"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/seller_order_history_product_sub_total"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:background="@color/grey"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+
+</ScrollView>

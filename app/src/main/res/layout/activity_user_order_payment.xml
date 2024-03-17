@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E5E5CB"
+    tools:context=".UserKitPaymentActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="50dp">
+
+            <TextView
+                android:id="@+id/tv_payment_activity_heading"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:text="Select a payment method"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/tv_view"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_below="@+id/tv_payment_activity_heading"
+                android:background="@drawable/e_wallet_pana" />
+
+
+            <RadioGroup
+                android:id="@+id/radioGroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_view"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="30dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_upi_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_view"
+                    android:layout_marginTop="10dp"
+                    android:minHeight="50dp"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/rb_upi_select"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:onClick="onClick"
+                            android:text="UPI/Netbanking"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/et_upi_address"
+                            android:layout_width="350dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/rb_upi_select"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/view_background"
+                            android:hint="Enter your UPI address"
+                            android:paddingLeft="20dp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_card_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_view"
+                    android:layout_marginTop="10dp"
+                    android:minHeight="50dp"
+                    app:cardCornerRadius="20dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <RadioButton
+                            android:id="@+id/rb_card_select"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:checked="false"
+                            android:onClick="onClick"
+                            android:text="Debit or credit card"
+                            android:textSize="15sp" />
+
+                        <EditText
+                            android:id="@+id/et_card_payment"
+                            android:layout_width="350dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/rb_card_select"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/view_background"
+                            android:hint="Enter your card number"
+                            android:inputType="number"
+                            android:paddingLeft="20dp" />
+
+                        <EditText
+                            android:id="@+id/et_card_name"
+                            android:layout_width="350dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/et_card_payment"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/view_background"
+                            android:hint="Enter the name on the card"
+                            android:paddingLeft="20dp" />
+
+                        <EditText
+                            android:id="@+id/et_card_cvv"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@id/et_card_name"
+                            android:layout_alignStart="@id/et_card_name"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/view_background"
+                            android:hint="cvv"
+                            android:inputType="number"
+                            android:paddingLeft="20dp" />
+
+                        <EditText
+                            android:id="@+id/et_card_expiry_date"
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:layout_below="@id/et_card_name"
+                            android:layout_alignEnd="@id/et_card_name"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/view_background"
+                            android:hint="exp date"
+                            android:paddingLeft="10dp" />
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_cod_section"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_view"
+                    android:layout_marginTop="10dp"
+                    android:minHeight="50dp"
+                    app:cardCornerRadius="20dp">
+
+                    <RadioButton
+                        android:id="@+id/rb_cod_select"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:checked="false"
+                        android:onClick="onClick"
+                        android:text="Cash on delivery"
+                        android:textSize="15sp" />
+                </androidx.cardview.widget.CardView>
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/bt_place_userkit_order"
+                android:layout_width="350dp"
+                android:layout_height="50dp"
+                android:layout_below="@id/radioGroup"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:background="@drawable/button_view_background"
+                android:text="Checkout"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
